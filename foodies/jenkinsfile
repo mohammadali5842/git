@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages {
+        stage('check out scm') {
+            steps {
+                echo "checkout scm repository"
+            }
+        }
+        stage('build') {
+            steps {
+                echo "building project using maven"
+            }
+        }      
+    }
+}
